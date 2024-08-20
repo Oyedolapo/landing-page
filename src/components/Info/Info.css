@@ -1,0 +1,24 @@
+.app__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 8rem 3rem;
+}
+
+.app__info p{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__info{
+        padding: 5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__info p{
+        font-size: 20px;
+    }
+}

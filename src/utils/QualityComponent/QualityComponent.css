@@ -1,0 +1,18 @@
+.app__qualityComponent-card{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.app__qualityComponent-card img{
+    width: 50px;
+}
+
+.app__qualityComponent-text{
+    color: var(--background-color);
+   
+}
+
+.app__qualityComponent-text p{
+    font-size: 11px;
+}

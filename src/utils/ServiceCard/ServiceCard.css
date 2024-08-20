@@ -1,0 +1,23 @@
+.app__serviceCard{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.app__service-icon img{
+    width: 30px;
+}
+
+.app__service-info h4{
+    color: #1A5319;
+}
+
+.app__serviceCard:hover{
+    background: var(--color-white);
+    border-radius: 15px;
+    transform: scale(1.1);
+    box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.2);
+}

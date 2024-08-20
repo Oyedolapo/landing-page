@@ -1,0 +1,60 @@
+.app__navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1A5319;
+
+    padding: 1rem 4rem;
+}
+
+.app__navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__navbar-logo img{
+    width: 150px;
+}
+
+.app__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    list-style: none;
+}
+
+.app__navbar-links li{
+    margin: 0 1rem;
+    font-weight: 400;
+}
+
+.app__navbar-links a{
+    color: var(--color-white);
+}
+
+ .active-links{
+    color: var(--text-color) !important;
+}
+
+
+@media screen and (max-width: 650px) {
+    .app__navbar{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .app__navbar-logo{
+        margin-bottom: 1rem;
+    }
+
+    .app__navbar-links li{
+        font-weight: 500;
+    }
+}

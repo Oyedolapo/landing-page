@@ -1,0 +1,23 @@
+.app__discover{
+    padding: 4rem;
+}
+
+.app__discover h3{
+    padding: 1.5rem 0;
+    color: #059212;
+}
+
+.app__discover p{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .app__discover{
+        padding: 4rem 2.5rem;
+    }
+
+    .app__discover h3{
+        text-align: center;
+    }
+}

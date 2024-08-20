@@ -1,0 +1,48 @@
+.app__reason{
+    padding: 3rem 4rem;
+}
+
+.app__reason-heading{
+    padding: 2rem 0;
+}
+
+.app__reason-heading h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #059212;
+}
+
+.app__reason-body{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 6rem;
+    gap: 2.5rem;
+}
+
+.app__reason-card{
+    width: 300px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app__reason-card h3{
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.app__reason-card img{
+    width: 60px;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__reason{
+        padding: 2rem;
+    }
+
+    .app__reason-body{
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+}

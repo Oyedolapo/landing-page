@@ -1,0 +1,81 @@
+.app__contactForm{
+    padding: 1rem 4rem 2rem;
+}
+
+.app__contactForm-heading{
+    padding: 1rem 0;
+}
+
+.app__contactForm-heading h3{
+    font-size: 1.2rem;
+    color: #059212;
+}
+
+.app__form-input{
+    display: flex;
+    gap: 3rem;
+}
+
+.input-div{
+    margin: .7rem 0;
+}
+
+.input-div label{
+    font-size: 14px;
+    
+}
+
+.input-div input, .input-div textarea, .input-div select{
+    width: 30rem;
+    height: 2.7rem;
+    border: none;
+    background: rgba(5, 146, 18, 0.1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    outline: none;
+    margin: .7rem 0;
+}
+
+.form-btn button{
+    background: #059212;
+    border: none;
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__form-input{
+        gap: 2rem;
+    }
+
+    .input-div input, .input-div textarea, .input-div select{
+        width: 20rem;
+        height: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .app__contactForm-heading h3{
+        text-align: center;
+    }
+
+    .app__contactForm{
+        padding: 1rem 2.5rem 2rem;
+    }
+
+    .app__form-input{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .input-div{
+        margin: .3rem 0;
+    }
+
+    .input-div input, .input-div textarea, .input-div select{
+        width: 100%;
+        height: 2.7rem;
+    }
+}

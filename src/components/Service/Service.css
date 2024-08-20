@@ -1,0 +1,28 @@
+.app__service{
+    padding-top: 2rem;
+    padding: 5rem 2rem 10rem;
+    background: rgba(5, 146, 18, 0.1);
+}
+
+.app__service-heading{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.app__service-heading h1{
+    color: #1A5319;
+}
+
+.app__service-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .app__service{
+        padding: 5rem 0;
+    }
+}

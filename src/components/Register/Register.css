@@ -1,0 +1,114 @@
+.app__register{
+    background: #1A5319;
+    padding: 4rem 6rem;
+}
+
+.app__register-content{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 7rem;
+}
+
+.app__register-text{
+    padding-top: 2rem;
+}
+
+.app__register-text h2{
+    color: #80AF81;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.app__register-text p{
+    color: #80AF81;
+    padding-top: 1rem;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.app__register-btn{
+    padding-top: 5rem;
+}
+
+.app__register-btn button{
+    border: none;
+    background: var(--background-color);
+    color: var(--color-white);
+    padding: 10px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.app__register-btn button:hover{
+    transform: scale(1.1);
+    background: #80AF81;
+}
+
+.app__register-image img{
+    width: 450px;
+    border-radius: 45px;
+    border: 5px solid var(--color-white);
+}
+
+@media screen and (max-width: 1150px) {
+    .app__register{
+        padding: 4rem 0;
+    }
+    
+    .app__register-content{
+        padding: 1rem;
+        gap: 4rem;
+    }
+
+    .app__register-text h2{
+        font-size: 20px;
+    }
+
+    .app__register-btn{
+        padding-top: 2rem;
+    }
+    
+    .app__register-btn button{
+        padding: 10px 80px;
+    }
+
+    .app__register-image img{
+        width: 350px;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .app__register{
+        padding: 2rem;
+    }
+
+    .app__register-content{
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .app__register-text{
+        text-align: center;
+    }
+
+    .app__register-text h2{
+        font-size: 25px;
+    }
+
+    .app__register-btn{
+        padding-top: 5rem;
+    }
+    
+    .app__register-btn button{
+        padding: 10px 80px;
+    }
+
+    .app__register-image img{
+        width: 330px;
+        border-radius: 15px;
+    }
+}

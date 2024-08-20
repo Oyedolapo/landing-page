@@ -1,0 +1,26 @@
+.app__details{
+    padding: 3rem 4rem;
+}
+
+.app__details-text h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    color: #059212;
+}
+
+.app__details-text p{
+    padding-bottom: 2rem;
+    color: #808080;
+}
+
+@media screen and (max-width: 800px) {
+    .app__details{
+        padding: 3rem;
+    }
+
+    .app__details-text h2{
+        font-size: 2rem;
+    }
+    
+}

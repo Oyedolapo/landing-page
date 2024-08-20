@@ -1,0 +1,113 @@
+.app__banner{
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("../../assets/banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 50px 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.app__banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 10rem 4rem;
+}
+
+.app__banner-content h1{
+    font-size: 27px;
+    line-height: 50px;
+    color: var(--color-white);
+}
+
+.app__banner-span{
+    background: var(--text-color);
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #059212;
+}
+
+.app__banner-content p{
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 0 10px;
+}
+
+.app__banner-dropdown{
+    background: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    column-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.app__banner-dropdown #service{
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    border: none;
+}
+
+.app__banner-submit button{
+    background: var(--background-color);
+    color: var(--color-white);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    padding: 16px 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .app__banner{
+        height: auto;
+        background-position: center;
+    }
+
+    .app__banner-content{
+        padding-top: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .app__banner-content{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 8rem 1rem;
+    }
+
+    .app__banner-content h1{
+        font-size: 22px;
+        line-height: 50px;
+    }
+
+    .app__banner-content p, .app__banner-content h1{
+        color: var(--color-white);
+    }
+
+    .app__banner-submit button{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .app__banner-submit button{
+        font-size: 10px;
+    }
+
+    .app__banner-content h1{
+        font-size: 18px;
+    }
+
+    .app__banner-content p{
+        font-size: 16px;
+    }
+}
