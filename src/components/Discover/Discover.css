@@ -12,7 +12,7 @@
     font-size: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
     .app__discover{
         padding: 4rem 2.5rem;
     }

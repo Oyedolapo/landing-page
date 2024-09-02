@@ -93,6 +93,11 @@
         color: var(--color-white);
     }
 
+    .app__banner-dropdown{
+        padding: 10px;
+        align-items: center;
+    }
+
     .app__banner-submit button{
         font-size: 12px;
     }
@@ -100,7 +105,16 @@
 
 @media screen and (max-width: 400px) {
     .app__banner-submit button{
-        font-size: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .app__banner-dropdown{
+        padding: 10px;
+    }
+    
+    .app__banner-dropdown #service{
+        width: 150px;
     }
 
     .app__banner-content h1{

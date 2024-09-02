@@ -6,7 +6,7 @@ import { animate, motion, useAnimation, useInView } from 'framer-motion';
 const Features = () => {
     const cardRef = useRef(null)
     const cardControls = useAnimation()
-    const cardInView = useInView(cardRef)
+    const cardInView = useInView(cardRef, { once: false })
 
     useEffect(() => {
         if (cardInView) {
@@ -17,12 +17,13 @@ const Features = () => {
             })
         } else {
             cardControls.start({
-                scale: 0.8,
+                scale: 1,
                 opacity: 1,
                 transition: { duration: 1, ease: "easeOut"}
             });
         }
     }, [cardInView, cardControls])
+    
   return (
     <div className='app__features'>
         <div className="app__features-heading">

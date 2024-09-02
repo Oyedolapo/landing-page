@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import images from '../../constants/images'
+import { Link } from 'react-router-dom';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import './About.css';
 
@@ -33,10 +34,11 @@ const About = () => {
             textControls.start({ opacity: 0, x: 100});
         }
     }, [textInView, textControls])
+
   return (
     <div className='app__about'>
         <motion.div className="about-image" initial="hidden" animate={mainControls} ref={imageRef} variants={{
-            hidden: { rotate: -70, opacity: 0},
+            hidden: { rotate: -45, opacity: 0},
             visible: {
                 rotate: 0,
                 opacity: 1,
@@ -46,16 +48,16 @@ const About = () => {
             <img src={images.about1} alt="image" className='about-image-one'/>
             <img src={images.about2} alt="image" className='about-image-two'/>
         </motion.div>
-        <motion.div className="about-text" ref={aboutTextRef} animate={textControls} initial={{ opacity: 0, x: 100 }}>
+        <div className="about-text">
             <div className="about-text_content">
                 <p>Beyond being a platform for services, Call2Fix is a lifestyle choice</p>
                 <p>"With our Call2Fix app, get all of your home and workplace repairs taken care of!"</p>
                 <p>Easily keep an eye on your home services. With a variety of services to make your life easier and a smooth booking experience, you tend to stay more organized. Let us handle the rest, and concentrate on what really matters.</p>
                 <div className="about-text-btn">
-                    <button>More about us</button>
+                    <Link to="about"><button>More about us</button></Link>
                 </div>
             </div>
-        </motion.div>
+        </div>
     </div>
   )
 }

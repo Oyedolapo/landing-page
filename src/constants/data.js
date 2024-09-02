@@ -1,5 +1,83 @@
 import images from "./images";
 
+
+const serviceData = [
+    {
+        title: "Electrical & Power Systems",
+        description: "Ensure reliable and safe electrical systems with our expert services. We provide installation, repair, and maintenance for all types of electrical and power systems, including wiring, circuit breakers, and lighting. Our skilled technicians deliver high-quality solutions to keep your electrical systems running efficiently and securely.",
+        imgUrl: images.electrical
+    },
+
+    {
+        title: "Plumbing, Water & Sewage",
+        description: "Our expert plumbing services cover all your needs for water and sewage systems. From leak repairs and pipe installations to complete system overhauls, we ensure efficient and reliable solutions. Our team addresses both routine maintenance and emergency issues to keep your water and sewage systems functioning smoothly and effectively.",
+        imgUrl: images.plumbing
+    },
+
+    {
+        title: "Civil Works & Painting",
+        description: "Transform your spaces with our comprehensive civil works and painting services. We handle a wide range of construction and renovation projects, from structural modifications to aesthetic enhancements. Our expert team ensures quality workmanship and attention to detail, delivering durable and visually appealing results for both residential and commercial properties.",
+        imgUrl: images.civil
+    },
+
+    {
+        title: "Locksmith",
+        description: "Ensure the security of your property with our professional locksmith services. We offer expert solutions for lock installation, repair, and emergency lockout situations. Whether you need to upgrade your security system or gain access to a locked space, our skilled locksmiths are here to provide reliable and efficient service.",
+        imgUrl: images.locksmith
+    },
+
+    {
+        title: "Air Conditioning or HVAC Systems",
+        description: "Stay comfortable year-round with our comprehensive air conditioning and HVAC system services. We specialize in installation, repair, and maintenance, ensuring efficient and reliable climate control for your home or business. Our experts provide tailored solutions to keep your indoor environment perfect in any season.",
+        imgUrl: images.airConditioning
+    },
+
+    {
+        title: "Swimming Pool Maintenance",
+        description: "Keep your pool in pristine condition with our expert maintenance services. We handle everything from routine cleaning and water testing to equipment repairs and seasonal preparations, ensuring a safe and enjoyable swimming environment all year round.",
+        imgUrl: images.swimming
+    },
+
+    {
+        title: "Carpentry & Furniture Repairs",
+        description: "Our skilled carpenters provide high-quality carpentry services and furniture repairs, ensuring your woodwork is both functional and aesthetically pleasing. From custom-built furniture to restoring worn pieces, we deliver craftsmanship that enhances the beauty and longevity of your home or office furnishings.",
+        imgUrl: images.carpentry
+    },
+
+    {
+        title: "Interior Decorations",
+        description: "Transform your space with our expert interior decoration services. We create stylish and personalized designs that reflect your taste and enhance the aesthetics of your home or office. From color schemes to furniture selection, our team ensures every detail is perfect, bringing your vision to life with elegance and functionality.",
+        imgUrl: images.interior
+    },
+
+    {
+        title: "Cleaning & Fumigation Services",
+        description: "Our professional team offers thorough cleaning and fumigation services to maintain a pristine and hygienic environment. Whether it's routine cleaning, deep cleaning, or pest control, we tailor our services to meet the specific needs of your home or business, ensuring a safe and spotless space.",
+        imgUrl: images.cleaning
+    },
+
+    {
+        title: "Gardening & Landscaping",
+        description: "Transform your outdoor space with our expert gardening and landscaping services. From designing lush gardens to maintaining pristine lawns, we create beautiful, sustainable landscapes tailored to your vision.",
+        imgUrl: images.gardening
+    },
+
+    {
+        title: "Home Electronics",
+        description: "Enhance your living space with our professional home electronics services. We specialize in the installation, repair, and maintenance of various electronic devices, ensuring seamless functionality and convenience in your home.",
+        imgUrl: images.homeElectronics
+    },
+
+    {
+        title: "Office Equipment",
+        description: "Our expert technicians provide comprehensive services for office equipment, including installation, repair, and maintenance. We ensure your office runs smoothly with well-functioning printers, copiers, computers, and other essential devices.",
+        imgUrl: images.officeEquipment
+    },
+
+
+
+]
+
 const reasonData = [
     {
         img: images.wallet,
@@ -83,5 +161,34 @@ const faqs = [
     }
 ]
 
+const categoryData = {
+    "Electrical & Power Systems": ["Maintenance & Repairs"],
+    "Plumbing, Water & Sewage": ["Maintenance & Repairs"],
+    "Civil Works & Painting": ["Maintenance & Repairs"],
+    "Locksmith": ["Maintenance & Repairs"],
+    "Air Conditioning or HVAC Systems": ["Maintenance & Repairs"],
+    "Swimming Pool Maintenance": ["Maintenance & Repairs"],
+    "Carpentry & Furniture Repairs": ["Maintenance & Repairs"],
+    "Interior Decorations": ["Maintenance & Repairs"],
+    "Cleaning & Fumigation Services": ["Maintenance & Repairs"],
+    "Gardening & Landscaping": ["Maintenance & Repairs"],
+    "Home Electronics": ["Furniture & Appliances"],
+    "Office Equipment": ["Furniture & Appliances"],
+    "Safety & Security Systems": ["Maintenance & Repairs"],
+    "ICT/Internet Services": ["Maintenance & Repairs"],
+    "Catering & Event Management Services": ["Logistics & Events"],
+    "Kitchen Appliances": ["Furniture & Appliances"],
+    "Waste Management & Environmental Services": ["Maintenance & Repairs"],
+    "Warehousing Logistics and Relocation Services": ["Logistics & Events"],
+    "Home Furniture": ["Furniture & Appliances"],
+    "Housekeeping / Domestic Supports": ["Maintenance & Repairs"],
+    "Serviced Offices and Apartments": ["Logistics & Events"],
+    "Renewable Energy Solutions": ["Maintenance & Repairs"],
+    "Pickup & Delivery": ["Logistics & Events"],
+    "Facility Inspection Service": ["Maintenance & Repairs"],
+    "Training & Consultancy": ["Maintenance & Repairs"],
+    "Welding, Aluminium & Glazing Works": ["Maintenance & Repairs"]
+}
 
-export default { reasonData, faqs }
+
+export default { reasonData, faqs, categoryData, serviceData }

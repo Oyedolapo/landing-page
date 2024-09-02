@@ -1,0 +1,22 @@
+.app__contact-selectedService{
+    padding: 0 4rem;
+}
+
+.app__contact-selectedService h3{
+    padding: 1.5rem 0;
+    color: #059212;
+}
+
+.app__contact-selectedService p{
+    font-weight: 300;
+    font-size: 15px;
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 760px) {
+    .app__contact-selectedService{
+        padding: 0 2.5rem;
+    }
+
+    
+}

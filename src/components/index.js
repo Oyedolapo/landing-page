@@ -12,6 +12,7 @@ import FAQs from "./FAQs/FAQs";
 import PageBanner from "./PageBanner/PageBanner";
 import Discover from "./Discover/Discover";
 import ContactForm from "./ContactForm/ContactForm";
+import SelectField from "./SelectField/SelectField";
 import Footer from "./Footer/Footer";
 
 export {
@@ -29,5 +30,6 @@ export {
     PageBanner,
     Discover,
     ContactForm,
+    SelectField,
     Footer
 }

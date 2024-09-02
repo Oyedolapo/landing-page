@@ -27,8 +27,14 @@
     font-weight: 300;
 }
 
-.app__register-btn{
-    padding-top: 5rem;
+.app__register-img{
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.app__register-img img{
+    width: 200px;
 }
 
 .app__register-btn button{
@@ -44,6 +50,10 @@
 .app__register-btn button:hover{
     transform: scale(1.1);
     background: #80AF81;
+}
+
+.app__register-image{
+    overflow: hidden;
 }
 
 .app__register-image img{
@@ -73,6 +83,12 @@
     .app__register-btn button{
         padding: 10px 80px;
     }
+
+    .app__register-img{
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    
 
     .app__register-image img{
         width: 350px;
@@ -105,6 +121,10 @@
     
     .app__register-btn button{
         padding: 10px 80px;
+    }
+
+    .app__register-img{
+        align-items: center;
     }
 
     .app__register-image img{

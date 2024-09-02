@@ -1,26 +1,46 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './ContactForm.css';
 import emailjs from "@emailjs/browser"
 import toast from 'react-hot-toast';
+import SelectField from '../SelectField/SelectField';
+import { data } from '../../constants';
 
 
-const ContactForm = () => {
+const ContactForm = ({service}) => {
     const [formData, setFormData] = useState({
         firstname: "",
         lastname: "",
-        service: "",
+        service: service || "",
         email: "",
         phone: "",
         date: "",
         description: "",
-        address: ""
+        address: "",
+        subcategory: "",
+        firstTimer: "No"
     });
 
+    useEffect(() => {
+        setFormData((prevData) => ({
+            ...prevData,
+            service: service
+        }));
+    }, [service]);
+
     const handleChange = (e) => {
+        const { name, value } = e.target;
         setFormData({
             ...formData,
-            [e.target.name]: e.target.value
-        })
+            [name]: value
+        });
+
+        if (name === 'service') {
+            setFormData({
+                ...formData,
+                service: value,
+                subcategory: ""
+            })
+        }
     }
 
     const handleSubmit = (e) => {
@@ -28,7 +48,7 @@ const ContactForm = () => {
 
         const toastId = toast.loading('Sending email...');
 
-        emailjs.sendForm('service_muroq3d', 'template_uw6ifeg', e.target, 'eWHq1NA1q4vl_PzP8')
+        emailjs.sendForm('service_t0q8n4f', 'template_741xw6c', e.target, 'xy_9kVoCbi4lmxvWj')
         .then((result) => {
             toast.dismiss(toastId)
             toast.success('Request sent successfully!');
@@ -58,27 +78,41 @@ const ContactForm = () => {
             </div>
 
             <div className="app__form-input">
-                <div className="input-div">
-                    <label htmlFor="service">Service</label><br />
-                    <select name="service" id="service" value={formData.service} onChange={handleChange}>
-                        <option value="Electrical works">Electrical works</option>
-                        <option value="Plumbing works">Plumbing works</option>
-                        <option value="Carpentry works">Carpentry works</option>
-                        <option value="Air Conditioning">Air Conditioning/HVAC Systems</option>
-                        <option value="Cleaning">Cleaning and Fumigation</option>
-                        <option value="Generator">Generator Repairs</option>
-                        <option value="Domestic appliances">Domestic appliances</option>
-                        <option value="Office equipments">Office equipments</option>
-                        <option value="Furniture">Furniture & Carpentry services</option>
-                        <option value="Others">Others</option>
-                    </select>
-                </div>
+                <SelectField 
+                    label="Category"
+                    name="service"
+                    value={formData.service}
+                    options={Object.keys(data.categoryData)}
+                    handleChange={handleChange}
+                />
 
+                <SelectField 
+                    label="Subcategory"
+                    name="subcategory"
+                    value={formData.subcategory}
+                    options={data.categoryData[formData.service] || ["Select a category first"]}
+                    handleChange={handleChange}
+                />
+            </div>
+
+            <div className="app__form-input">
                 <div className="input-div">
                     <label htmlFor="email">Email address</label><br />
                     <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} required placeholder='youremail@email.com'/>
                 </div>
+
+                <div className="input-div">
+                    <label>First time using Call2Fix?</label>
+                    <div className="radio-email-group">
+                        <input type="radio" name="firstTimer" id="firstTimerYes" value="Yes" onChange={handleChange} checked={formData.firstTimer === "Yes"}/>
+                        <label htmlFor="firstTimerYes">Yes</label>
+
+                        <input type="radio" name="firstTimer" id="firstTimerNo" value="No" onChange={handleChange} checked={formData.firstTimer === "No"}/>
+                        <label htmlFor="firstTimerNo">No</label>
+                    </div>
+                </div>
             </div>
+
 
             <div className="app__form-input">
                 <div className="input-div">

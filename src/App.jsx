@@ -13,7 +13,9 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
           <Route path="about" element={<AboutUs />}/>
-          <Route path="contact" element={<Contact />}/>
+          <Route path="request" element={<Contact />}/>
+          <Route path="request/:serviceName?" element={<Contact />}/>
+          
         </Route>
       </Routes>
       <Toaster position="top-right" reverseOrder={false}/>

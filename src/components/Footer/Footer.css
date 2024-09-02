@@ -3,7 +3,7 @@
     background: #1A5319;
 }
 
-.footer-links{
+.footer-links, .footer-links a{
     display: flex;
     justify-content: space-between;
     color: #FAF9F6;
@@ -41,8 +41,15 @@
     padding-bottom: .8rem;
 }
 
+/* .footer-links_four-images{
+    display: flex;
+    flex-direction: column;
+    
+} */
+
 .footer-links_four img{
     width: 150px;
+    display: block;
 }
 
 .app__footer-copyright{
@@ -56,6 +63,10 @@
 
 .app__footer-copyright h4{
     color: #059212;
+}
+
+.more:hover{
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1150px) {

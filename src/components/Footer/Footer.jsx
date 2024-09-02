@@ -3,8 +3,8 @@ import images from '../../constants/images'
 import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
 import { BsFillPhoneFill } from "react-icons/bs";
 import { MdCopyright } from "react-icons/md";
-import { FaApple } from "react-icons/fa";
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -28,25 +28,26 @@ const Footer = () => {
 
         <div className="footer-links_two">
           <h4>Quick links</h4>
-          <p>Home</p>
-          <p>Earn</p>
-          <p>Request a service</p>
-          <p>Alpha Mead</p>
+          <Link to='.'><p>Home</p></Link>
+          <Link to='about'><p>Earn</p></Link>
+          <Link to='request'><p>Request a service</p></Link>
+          <Link to='https://alphamead.com'><p>Alpha Mead</p></Link>
         </div>
 
         <div className="footer-links_three">
           <h4>Our services</h4>
-          <p>Electrical Repair & Maintenance</p>
-          <p>Building & Civil Works</p>
-          <p>Plumbing</p>
-          <p>HVAC/Air Conditioning</p>
-          <p>Environmental Services</p>
-          <p>More...</p>
+          <p>Electrical & Power Systems</p>
+          <p>Plumbing, Water & Sewage</p>
+          <p>Civil Works & Painting</p>
+          <p>Locksmith</p>
+          <p>Home Electronics</p>
+          <Link to="request" className='more'><p>More...</p></Link>
         </div>
 
         <div className="footer-links_four">
           <h4>Download our app</h4>
-          <img src={images.playstore} alt="playstore" />
+           <Link to="https://play.google.com/store/apps/details?id=com.tulabyte.call2fix&hl=en&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src={images.playstore} alt="playstore" /></Link>
+           <Link to="https://apps.apple.com/ng/app/call2fix/id1483186601"><img src={images.appstore} alt="appstore" /></Link>
         </div>
       </div>
 

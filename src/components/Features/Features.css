@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
+    padding: 3rem 0;
 }
 
 .app__feature-card{
@@ -39,6 +40,7 @@
 
 .app__feature-icon{
     width: 50px;
+    z-index: 2;
 }
 
 .app__feature-icon img{
@@ -46,8 +48,8 @@
     height: 50px;
     background: var(--color-white);
     position: absolute;
-    top: -10%;
-    left: 45%;
+    top: -4%;
+    left: 43%;
     padding: 10px;
     border: 1px solid var(--background-color);
     border-radius: 100%;

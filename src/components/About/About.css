@@ -3,6 +3,7 @@
     justify-content: center;
     gap: 5rem;
     padding: 4rem 10rem;
+    overflow: hidden;
 }
 
 .about-image{
@@ -80,6 +81,7 @@
     .app__about{
         padding: 4rem 2rem;
         gap: 2rem;
+        overflow: hidden;
     }
     .about-text_content{
         width: 100%;
@@ -91,6 +93,7 @@
         flex-direction: column;
         align-items: center;
         padding: 4rem 0;
+        overflow: hidden;
     }
 
     .about-text_content{

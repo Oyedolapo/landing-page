@@ -1,6 +1,6 @@
 .app__serviceCard{
     width: 150px;
-    height: 150px;
+    height: 170px;
     padding: 20px;
     text-align: center;
     transition: ease-in-out .3s;
@@ -8,7 +8,9 @@
 }
 
 .app__service-icon img{
-    width: 30px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 .app__service-info h4{
