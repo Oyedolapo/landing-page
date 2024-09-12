@@ -74,6 +74,76 @@ const serviceData = [
         imgUrl: images.officeEquipment
     },
 
+    {
+        title: "Safety & Security Systems",
+        description: "Our Safety & Security System provides comprehensive protection for your property, combining advanced technology with real-time monitoring to ensure a secure environment. From intrusion detection and surveillance to emergency response integration, we deliver reliable solutions tailored to meet your safety needs, giving you peace of mind 24/7."
+    },
+
+    {
+        title: "ICT or Internet Services",
+        description: "Our ICT & Internet Services offer fast, reliable connectivity and tailored IT solutions to keep your business running smoothly. From high-speed internet access to network setup and managed services, we ensure seamless communication, enhanced productivity, and secure data management, all backed by expert technical support."
+    },
+
+    {
+        title: "Catering & Event Management Services",
+        description: "Our Catering & Event Management Services provide a full-service experience, from exquisite catering tailored to your preferences to seamless event planning and execution. Whether it's a corporate gathering, wedding, or special occasion, we ensure every detail is handled with professionalism and creativity, delivering unforgettable experiences for you and your guests."
+    },
+
+    {
+        title: "Kitchen Appliances",
+        description: "Our Kitchen Appliances offer innovative, energy-efficient solutions designed to enhance your cooking experience. From state-of-the-art ovens and refrigerators to versatile small appliances, we provide high-quality products that combine functionality, style, and durability, making your kitchen both modern and efficient."
+    },
+
+    {
+        title: "Waste Management & Environmental Services",
+        description: "Our Waste Management & Environmental Services provide eco-friendly solutions for efficient waste disposal, recycling, and environmental sustainability. We offer tailored services for residential, commercial, and industrial needs, ensuring proper waste handling, pollution reduction, and compliance with environmental regulations, helping to create cleaner and greener communities."
+    },
+
+    {
+        title: "Warehousing Logistics and Relocation Services",
+        description: "Our Warehousing, Logistics, and Relocation Services deliver comprehensive solutions for managing and optimizing your supply chain. We offer secure storage, efficient inventory management, and streamlined logistics to ensure timely and accurate delivery. Additionally, our relocation services handle all aspects of moving and setting up operations, ensuring a smooth transition with minimal disruption to your business."
+    },
+
+    {
+        title: "Home Furniture",
+        description: "Our Home Furniture Services offer a seamless experience for selecting, customizing, and installing furniture in your home. From expert design consultations to personalized recommendations and professional setup, we ensure that every piece fits perfectly with your style and space, making your home both beautiful and functional."
+    },
+
+    {
+        title: "Housekeeping or Domestic Supports",
+        description: "Our Housekeeping & Domestic Support services transform your home into a haven of cleanliness and order. We provide reliable and efficient cleaning, organizing, and general support, tailored to fit your unique needs and schedule. Let us handle the chores so you can enjoy a sparkling home and more free time for the things you love!"
+    },
+
+    {
+        title: "Serviced Offices and Apartments",
+        description: "Our Serviced Offices and Apartments offer turnkey solutions for your business and living needs. Enjoy fully furnished, modern workspaces with flexible leases and on-site amenities, or opt for stylish, all-inclusive apartments with exceptional comfort and convenience. Whether you’re looking for a professional environment or a hassle-free home, we provide the perfect space to suit your lifestyle."
+    },
+
+    {
+        title: "Renewable Energy Solutions",
+        description: "Our Renewable Energy Solutions harness the power of sustainable resources to provide efficient, eco-friendly energy for your needs. From solar and wind power systems to cutting-edge energy storage, we offer customized solutions that reduce your carbon footprint and lower energy costs, while supporting a greener future."
+    },
+
+    {
+        title: "Pickup & Delivery",
+        description: "Our Pickup & Delivery services streamline the process of transporting goods with convenience and reliability. Whether you need items collected from your location or delivered to a destination, we ensure timely and secure handling, offering flexible scheduling and real-time tracking to meet your logistics needs efficiently."
+    },
+
+    {
+        title: "Facility Inspection Service",
+        description: "Our Facility Inspection Service provides thorough, detailed evaluations of your property to ensure safety, compliance, and operational efficiency. Our expert inspectors assess systems, structures, and equipment, identifying potential issues and recommending solutions to enhance performance and maintain high standards."
+    },
+
+    {
+        title: "Training & Consultancy",
+        description: "Our Training & Consultancy services empower individuals and organizations with expert guidance and tailored education. We offer comprehensive training programs and strategic consultancy to enhance skills, optimize processes, and drive growth. From professional development workshops to strategic business advice, we deliver actionable insights and hands-on learning to help you achieve your goals."
+    },
+
+    {
+        title: "Welding, Aluminium & Glazing Works",
+        description: "Our Welding, Aluminium & Glazing Works provide top-notch craftsmanship for a variety of metal and glass needs. We specialize in precision welding, custom aluminium fabrications, and expert glazing solutions, delivering high-quality, durable results for both structural and decorative applications. Whether you’re enhancing your space or repairing critical components, our skilled team ensures exceptional performance and aesthetic appeal."
+    },
+
 
 
 ]
@@ -175,13 +245,13 @@ const categoryData = {
     "Home Electronics": ["Furniture & Appliances"],
     "Office Equipment": ["Furniture & Appliances"],
     "Safety & Security Systems": ["Maintenance & Repairs"],
-    "ICT/Internet Services": ["Maintenance & Repairs"],
+    "ICT or Internet Services": ["Maintenance & Repairs"],
     "Catering & Event Management Services": ["Logistics & Events"],
     "Kitchen Appliances": ["Furniture & Appliances"],
     "Waste Management & Environmental Services": ["Maintenance & Repairs"],
     "Warehousing Logistics and Relocation Services": ["Logistics & Events"],
     "Home Furniture": ["Furniture & Appliances"],
-    "Housekeeping / Domestic Supports": ["Maintenance & Repairs"],
+    "Housekeeping or Domestic Supports": ["Maintenance & Repairs"],
     "Serviced Offices and Apartments": ["Logistics & Events"],
     "Renewable Energy Solutions": ["Maintenance & Repairs"],
     "Pickup & Delivery": ["Logistics & Events"],

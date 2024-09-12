@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser"
 import toast from 'react-hot-toast';
 import SelectField from '../SelectField/SelectField';
 import { data } from '../../constants';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 
 const ContactForm = ({service}) => {
@@ -19,6 +20,8 @@ const ContactForm = ({service}) => {
         subcategory: "",
         firstTimer: "No"
     });
+
+    const [recaptchaToken, setRecaptchaToken] = useState(null);
 
     useEffect(() => {
         setFormData((prevData) => ({
@@ -43,8 +46,17 @@ const ContactForm = ({service}) => {
         }
     }
 
+    const handleRecaptchaChange = (token) => {
+        setRecaptchaToken(token)
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!recaptchaToken) {
+            toast.error('Please complete the reCAPTCHA');
+            return;
+        }
 
         const toastId = toast.loading('Sending email...');
 
@@ -136,6 +148,10 @@ const ContactForm = ({service}) => {
                     <label htmlFor="address">Address</label><br />
                     <input type="text" name="address" id="address" value={formData.address} onChange={handleChange} required placeholder='Provide us with the address for the service'/>
                 </div>
+            </div>
+
+            <div className="app__form-input">
+                <ReCAPTCHA sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY} onChange={handleRecaptchaChange}/>
             </div>
             <div className="form-btn">
                 <button type="submit">Submit Request</button>

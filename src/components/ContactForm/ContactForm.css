@@ -51,6 +51,10 @@
     font-size: 14px;
 }
 
+.form-btn{
+    margin-top: 1rem;
+}
+
 .form-btn button{
     background: #059212;
     border: none;

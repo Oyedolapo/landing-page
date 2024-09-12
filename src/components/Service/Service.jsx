@@ -12,7 +12,7 @@ const Service = () => {
         <h1>Popular Services</h1>
       </div>
       <div className="app__service-cards">
-        {data.serviceData.map((service) => (
+        {data.serviceData.slice(0,12).map((service) => (
           <Link to={`request/${service.title}`} key={service.title}><ServiceCard title={service.title} imgUrl={service.imgUrl}/></Link>
         ))}
       </div>
